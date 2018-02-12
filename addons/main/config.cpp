@@ -42,9 +42,9 @@ class CfgMods
 		logoSmall = "\x\a3cn_vehicles\addons\main\logos\a3cn_mod_logo_small_ca.paa";
 		tooltip = "tooltip";
 		tooltipOwned = "tooltip_owned";
-		action = "https://arma3.com/";
+		action = "http://www.mesadeguerra.com.br";
 		dlcColor[] = {0.69,0.25,0.12,1};
-		overview = "texto overview";
+		overview = "Mod oficial do grupo A3CN para veículos especiais da unidade CFOD.";
 		hideName = 1;
 		hidePicture = 0;
 		name = "A3CN Vehicles";

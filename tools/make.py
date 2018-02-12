@@ -72,7 +72,7 @@ dssignfile = ""
 prefix = "a3cn_vehciles"
 pbo_name_prefix = "a3cn_"
 signature_blacklist = []
-importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "a3cn_vehicles.paa", "a3cn_vehicles_small.paa", "meta.cpp"]
+importantFiles = ["mod.cpp", "README.md"]
 versionFiles = ["README.md", "mod.cpp"]
 
 ciBuild = False # Used for CI builds
