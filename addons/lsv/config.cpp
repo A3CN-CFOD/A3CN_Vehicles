@@ -11,7 +11,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			"A3CN_LSV_01_BLACK",
+			"A3CN_LSV_01_BLACK"
 			
 		};
 		weapons[]={};
