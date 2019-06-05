@@ -4,22 +4,13 @@ class CfgVehicles
 	class O_T_LSV_02_armed_black_F;
 	class A3CN_LSV_01_BLACK: O_T_LSV_02_armed_black_F
 	{
-		author="Toaster";
-		displayName="LSV Víbora";
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV BLACK";
 		_generalMacro="A3CN_LSV_01_BLACK";
 		scope=2;
 		scopeCurator=2;
 		scopeGarage = 2;
 		transportMaxBackpacks = 25;
-		
-		// Init Handler
-		/* if (isClass (configfile >> "CfgPatches" >> "ace_cargo")) then { */
-		/* 	class EventHandlers: EventHandlers */
-		/* 	{ */
-		/* 		init="[""ACE_Wheel"", (_this select 0)] call ace_cargo_fnc_loadItem"; */
-		/* 	}; */
-		/* }; */
-
 		
 		class EventHandlers
 		{
@@ -34,65 +25,53 @@ class CfgVehicles
 		ace_cargo_size = 4;  
 		ace_cargo_canLoad = 1;
 
+		class AcreRacks {
+            
+            class Rack_1 {
+                displayName = "CFOD Radio Rack";      // Name displayed in the interaction menu
+                shortName = "Radio";                  // Short name displayed on the HUD. Maximum of 5 characters
+                componentName = "ACRE_VRC103";        // Rack type (able to mount a PRC117F)
+                allowedPositions[] = {"driver", {"cargo", 1}, "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+                disabledPositions[] = {};
+                defaultComponents[] = {};
+                mountedRadio = "ACRE_PRC117F";        // Predefined mounted radio
+                isRadioRemovable = 0;                 // Radio cannot be removed
+                intercom[] = {};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+            };
+        };
+
+
+
 
 		// Boost
 		acceleration=10;
 		enginePower=600;
-	 	maxOmega=720;
-		peakTorque=800;
-	 	maxSpeed=245; 
+	 	maxOmega=900;
+		peakTorque=1300;
+	 	maxSpeed=320; 
 	 	fuelCapacity=80; 
-	 	idleRpm=500;
-		redRpm=7900; 
-		clutchStrength=30;
+	 	idleRpm=900;
+		redRpm=3800; 
+		clutchStrength = 200.0;
 		class complexGearbox
 		{
-			GearboxRatios[]=
-			{
-				"R1",
-				-3.2309999,
-				"N",
-				0,
-				"D1",
-				3.4619999,
-				"D2",
-				4.5699999,
-				"D3",
-				4.5710001,
-				"D4",
-				3.97,
-				"D5",
-				2.601,
-				"D6",
-				0.89999998,
-				"D7",
-				0.64999998
-			};
-			TransmissionRatios[]=
-			{
-				"High",
-				5.1110001
-			};
-			gearBoxMode="auto";
-			moveOffGear=1;
-			driveString="D";
-			neutralString="N";
-			reverseString="R";
-			transmissionDelay=0.0099999998;
+			GearboxRatios[] = {"R1", -5.367, "N", 0, "D1", 5.367, "D2", 3.67, "D3", 2.238, "D4", 1.00, "D5", 0.8};
+			TransmissionRatios[] = {"High", 5.0};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+			gearUpMaxCoef = 0.8;
+			gearDownMaxCoef = 0.5;
+			gearUpMinCoef = 0.45;
+			gearDownMinCoef = 0.15;
+			transmissionDelay = 1;
 		};
-		torqueCurve[]=
-		{
-			{0,0},
-			{0.2,0.64999998},
-			{0.30000001,0.80000001},
-			{0.40000001,0.94999999},
-			{0.60000002,1},
-			{0.69999999,0.94999999},
-			{0.89999998,0.89999998},
-			{1,0.5}
-		};
-		changeGearMinEffectivity[]={0.94999999,0.15000001,0.98000002,0.98000002,0.98000002,0.98000002,0.97000003,0.94999999,0.94999999};
-
+		torqueCurve[] = {{0.0, 0.0}, {0.25, 0.65}, {0.3, 0.8}, {0.5, 0.95}, {0.7, 1.0}, {0.8, 0.9}, {0.9, 0.8}, {1.0, 0.5}};
+		changeGearMinEffectivity[] = {0.95, 0.15, 0.95, 0.95, 0.95, 0.95, 0.95, 0.95};
+		switchTime = 0.05;
+		latency = 0.2;
 
 		// Equipos
 		class TransportMagazines 
@@ -107,142 +86,21 @@ class CfgVehicles
 		}; 
 		class TransportItems 
 		{ 
-			/* if (isClass (configfile >> "CfgPatches" >> "ace_medical")) then { */
-				
-			/* 	// Medical */ 
-			/* 	class _xx_ACE_fieldDressing */
-			/* 	{ */
-			/* 		name="ACE_fieldDressing"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_elasticBandage */
-			/* 	{ */
-			/* 		name="ACE_elasticBandage"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_quikclot */
-			/* 	{ */
-			/* 		name="ACE_quikclot"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_packingBandage */
-			/* 	{ */
-			/* 		name="ACE_packingBandage"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_morphine */
-			/* 	{ */
-			/* 		name="ACE_morphine"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_epinephrine */
-			/* 	{ */
-			/* 		name="ACE_epinephrine"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_salineIV_500 */
-			/* 	{ */
-			/* 		name="ACE_salineIV_500"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_plasmaIV_500 */
-			/* 	{ */
-			/* 		name="ACE_plasmaIV_500"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_bloodIV_500 */
-			/* 	{ */
-			/* 		name="ACE_bloodIV_500"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_tourniquet */
-			/* 	{ */
-			/* 		name="ACE_tourniquet"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_bodyBag */
-			/* 	{ */
-			/* 		name="ACE_bodyBag"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_surgicalKit */
-			/* 	{ */
-			/* 		name="ACE_surgicalKit"; */
-			/* 		count="1"; */
-			/* 	}; */
-			/* 	class _xx_ACE_personalAidKit */
-			/* 	{ */
-			/* 		name="ACE_personalAidKit"; */
-			/* 		count="1"; */
-			/* 	}; */
-			/* } else { */
-
-				class _xx_FirstAidKit 
-				{ 
-					name="FirstAidKit"; 
-					count=10; 
-				};
-				class _xx_Medikit
-				{
-					name="Medikit";
-					count="5";
-				};
-				class _xx_ToolKit
-				{
-					name="ToolKit";
-					count="1";
-				};
-
-			/* }; */
-		
-			/* if (isClass (configfile >> "CfgPatches" >> "ace_explosives")) then { */
-
-			/* 	// EOD */
-			/* 	class _xx_ACE_DefusalKit */
-			/* 	{ */
-			/* 		name="ACE_DefusalKit"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_M26_Clacker */
-			/* 	{ */
-			/* 		name="ACE_M26_Clacker"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* 	class _xx_ACE_Clacker */
-			/* 	{ */
-			/* 		name="ACE_Clacker"; */
-			/* 		count="10"; */
-			/* 	}; */
-			/* }; */
-
-/* 				// Misc */
-/* 			if (isClass (configfile >> "CfgPatches" >> "ace_captive")) then { */
-/* 				class _xx_ACE_CableTie */
-/* 				{ */
-/* 					name="ACE_CableTie"; */
-/* 					count="10"; */
-/* 				}; */
-/* 			}; */
-
-/* 			if (isClass (configfile >> "CfgPatches" >> "ace_hearing")) then { */
-/* 				class _xx_ACE_EarPlugs */
-/* 				{ */
-/* 					name="ACE_EarPlugs"; */
-/* 					count="10"; */
-/* 				}; */
-/* 			}; */
-
-/* 			// Radio */
-/* 			if (isClass (configfile >> "CfgPatches" >> "task_force_radio")) then { */
-/* 				class _xx_tf_anprc152 */
-/* 				{ */
-/* 					name = "tf_anprc152"; */
-/* 					count = "2"; */
-/* 				}; */
-/* 			}; */
-
-
-			
+			class _xx_FirstAidKit 
+			{ 
+				name="FirstAidKit"; 
+				count=10; 
+			};
+			class _xx_Medikit
+			{
+				name="Medikit";
+				count="5";
+			};
+			class _xx_ToolKit
+			{
+				name="ToolKit";
+				count="1";
+			};
 			
 			class _xx_B_UavTerminal
 			{
@@ -270,7 +128,9 @@ class CfgVehicles
 				name="ATMine_Range_Mag";
 				count="2";
 			};
+
 		}; 
+
 		class TransportWeapons 
 		{
 			class _xx_launch_O_Titan_short_F 
@@ -278,12 +138,15 @@ class CfgVehicles
 				weapon="launch_O_Titan_short_F"; 
 				count=1; 
 			}; 
+
 			class _xx_MineDetector
 			{
-			 weapon="MineDetector";
-			 count="1";
+				 weapon="MineDetector";
+				 count="1";
 			};
+
 		}; 
+
 		class TransportBackpacks
 		{
 			class _xx_B_UAV_01_backpack_F
@@ -292,13 +155,6 @@ class CfgVehicles
 				count=1;
 			};
 
-			/* if (isClass (configfile >> "CfgPatches" >> "task_force_radio")) then { */
-			/* 	class _xx_tf_rt1523g */
-			/* 	{ */
-			/* 		backpack = "tf_rt1523g"; */
-			/* 		count = "1"; */
-			/* 	}; */
-			/* }; */
 			class _xx_B_Kitbag_cbr
 			{
 				backpack = "B_Kitbag_cbr";
@@ -329,15 +185,320 @@ class CfgVehicles
 		DLC="Expansion";
 		textureList[]=
 		{
-			"Víbora",
+			"BLACK",
 			1
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_01_co.paa",
+			"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+
+		frontRearSplit = 0.7;
+
+		class Wheels
+		{
+			class LF
+			{
+				side="left";
+				suspTravelDirection[]={-0.125,-1,0};
+				boneName="wheel_1_1_damper";
+				steering=1;
+				center="wheel_1_1_axis";
+				boundary="wheel_1_1_bound";
+				width="0.32";
+				mass=50;
+				MOI=6;
+				dampingRate=1;
+				dampingRateDamaged=5;
+				dampingRateInAir=0.80000001;
+				dampingRateDestroyed=5000;
+				maxBrakeTorque=4000;
+				maxHandBrakeTorque=0;
+				suspForceAppPointOffset="wheel_1_1_axis";
+				tireForceAppPointOffset="wheel_1_1_axis";
+				maxCompression=0.050000001;
+				maxDroop=0.1;
+				sprungMass=-1;
+				springStrength=62400;
+				springDamperRate=6233;
+				longitudinalStiffnessPerUnitGravity=10000;
+				latStiffX=2.5;
+				latStiffY=18;
+				frictionVsSlipGraph[] = {{0,0}, {0.25,0.0}, {0.5,0.25}, {0.75,0.5}, {0.8,0.5}, {0.85,0.6}, {0.9,0.65}, {1,0.8}};
+			};
+			class LR: LF
+			{
+				boneName="wheel_1_2_damper";
+				steering=0;
+				center="wheel_1_2_axis";
+				boundary="wheel_1_2_bound";
+				suspForceAppPointOffset="wheel_1_2_axis";
+				tireForceAppPointOffset="wheel_1_2_axis";
+				maxHandBrakeTorque=8000;
+				frictionVsSlipGraph[] = {{0, 1}, {0.5, 0.75}, {1, 0.5}};
+			};
+			class RF: LF
+			{
+				side="right";
+				suspTravelDirection[]={0.125,-1,0};
+				boneName="wheel_2_1_damper";
+				center="wheel_2_1_axis";
+				boundary="wheel_2_1_bound";
+				suspForceAppPointOffset="wheel_2_1_axis";
+				tireForceAppPointOffset="wheel_2_1_axis";
+			};
+			class RR: RF
+			{
+				boneName="wheel_2_2_damper";
+				steering=0;
+				center="wheel_2_2_axis";
+				boundary="wheel_2_2_bound";
+				suspForceAppPointOffset="wheel_2_2_axis";
+				tireForceAppPointOffset="wheel_2_2_axis";
+				maxHandBrakeTorque=8000;
+				
+			};
+		};
+	};
+	class A3CN_LSV_02_ADAX: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV ADAX";
+		_generalMacro="A3CN_LSV_02_ADAX";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ADAX",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_adax_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
 		};
 	};
+
+	class A3CN_LSV_02_ATAK: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV ATAK";
+		_generalMacro="A3CN_LSV_02_ATAK";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ATAK",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_atak_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+	class A3CN_LSV_02_CASCAVEL: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV CASCAVEL";
+		_generalMacro="A3CN_LSV_02_CASCAVEL";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ATAK",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_cascavel_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+	class A3CN_LSV_02_EVEREST: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV EVEREST";
+		_generalMacro="A3CN_LSV_02_EVEREST";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"EVEREST",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_everest_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+	class A3CN_LSV_02_KAPPA: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV KAPPA";
+		_generalMacro="A3CN_LSV_02_KAPPA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"KAPPA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_kappa_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_KRAKEN: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV KRAKEN";
+		_generalMacro="A3CN_LSV_02_KRAKEN";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"KRAKEN",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_kraken_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_MYTRA: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV MYTRA";
+		_generalMacro="A3CN_LSV_02_MYTRA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"MYTRA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_mytra_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_TAIPAN: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV TAIPAN";
+		_generalMacro="A3CN_LSV_02_TAIPAN";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"TAIPAN",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_taipan_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_VIBORA: A3CN_LSV_01_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="LSV VÍBORA";
+		_generalMacro="A3CN_LSV_02_VIBORA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"VÍBORA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_vibora_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+		};
+	};
+
 };
 
