@@ -1,3 +1,15 @@
+class CfgEditorSubcategories
+{
+	class vehicleRaptor
+	{
+		displayName = "Raptor";
+	};
+	class vehicleRaptorAT
+	{
+		displayName = "Raptor - AT";
+	};
+};
+
 class CfgVehicles
 {
 	class Car_F;
@@ -12,6 +24,8 @@ class CfgVehicles
 		scopeCurator=2;
 		scopeGarage = 2;
 		transportMaxBackpacks = 25;
+
+		editorSubcategory = "vehicleRaptor";
 		
 		class EventHandlers
 		{
@@ -514,7 +528,7 @@ class CfgVehicles
 		scopeCurator=2;
 		scopeGarage = 2;
 		transportMaxBackpacks = 25;
-		
+		editorSubcategory = "vehicleRaptorAT";
 		class EventHandlers
 		{
 			init="(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];";
