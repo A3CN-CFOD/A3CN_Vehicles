@@ -15,7 +15,7 @@ class CfgVehicles
 		
 		class EventHandlers
 		{
-			init="(_this select 0) removeMagazinesTurret [""500Rnd_65x39_Belt_Tracer_Green_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];(_this select 0) addMagazineTurret [""500Rnd_65x39_Belt_Tracer_Red_Splash"",[0]];";
+			init="(_this select 0) removeMagazinesTurret [""500Rnd_65x39_Belt_Tracer_Green_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];";
 		};
 
 
