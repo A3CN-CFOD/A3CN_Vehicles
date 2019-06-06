@@ -697,7 +697,9 @@ class CfgVehicles
 		{
 			"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_black_CO.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
-			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa"
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa"
 		};
 
 		frontRearSplit = 0.7;
@@ -765,6 +767,266 @@ class CfgVehicles
 				maxHandBrakeTorque=8000;
 				
 			};
+		};
+	};
+
+
+
+
+	class A3CN_LSV_02_AT_ADAX: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT ADAX";
+		_generalMacro="A3CN_LSV_02_AT_ADAX";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ADAX",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_adax_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa"
+
+		};
+	};
+
+	class A3CN_LSV_02_AT_ATAK: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT ATAK";
+		_generalMacro="A3CN_LSV_02_AT_ATAK";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ATAK",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_atak_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa"
+		};
+	};
+
+	class A3CN_LSV_02_AT_CASCAVEL: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT CASCAVEL";
+		_generalMacro="A3CN_LSV_02_AT_CASCAVEL";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"ATAK",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_cascavel_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa"
+		};
+	};
+
+	class A3CN_LSV_02_AT_EVEREST: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT EVEREST";
+		_generalMacro="A3CN_LSV_02_AT_EVEREST";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"EVEREST",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_everest_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_white.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_white.paa"
+		};
+	};
+
+	class A3CN_LSV_02_AT_KAPPA: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT KAPPA";
+		_generalMacro="A3CN_LSV_02_AT_KAPPA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"KAPPA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_kappa_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
+			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_AT_KRAKEN: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT KRAKEN";
+		_generalMacro="A3CN_LSV_02_AT_KRAKEN";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"KRAKEN",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_kraken_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_AT_MYTRA: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT MYTRA";
+		_generalMacro="A3CN_LSV_02_AT_MYTRA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"MYTRA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_mytra_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
+			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_AT_TAIPAN: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT TAIPAN";
+		_generalMacro="A3CN_LSV_02_AT_TAIPAN";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"TAIPAN",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_taipan_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_black.paa"
+		};
+	};
+
+
+	class A3CN_LSV_02_AT_VIBORA: A3CN_LSV_01_AT_BLACK
+	{
+		author="NFC3SPECTRO / Toaster";
+		displayName="RAPTOR AT VÍBORA";
+		_generalMacro="A3CN_LSV_02_AT_VIBORA";
+		side = 1;
+		faction = "A3CN_Vehicles";
+		crew="B_T_Soldier_F"; 
+	 	typicalCargo[]= 
+	 	{ 
+	 		"B_T_Soldier_F" 
+	 	};
+		DLC="Expansion";
+		textureList[]=
+		{
+			"VÍBORA",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_vibora_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_desert.paa"
 		};
 	};
 
