@@ -2,10 +2,11 @@ class CfgVehicles
 {
 	class Car_F;
 	class O_T_LSV_02_armed_black_F;
+	class O_T_LSV_02_AT_F;
 	class A3CN_LSV_01_BLACK: O_T_LSV_02_armed_black_F
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV BLACK";
+		displayName="RAPTOR BLACK";
 		_generalMacro="A3CN_LSV_01_BLACK";
 		scope=2;
 		scopeCurator=2;
@@ -265,7 +266,7 @@ class CfgVehicles
 	class A3CN_LSV_02_ADAX: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV ADAX";
+		displayName="RAPTOR ADAX";
 		_generalMacro="A3CN_LSV_02_ADAX";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -291,7 +292,7 @@ class CfgVehicles
 	class A3CN_LSV_02_ATAK: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV ATAK";
+		displayName="RAPTOR ATAK";
 		_generalMacro="A3CN_LSV_02_ATAK";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -317,7 +318,7 @@ class CfgVehicles
 	class A3CN_LSV_02_CASCAVEL: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV CASCAVEL";
+		displayName="RAPTOR CASCAVEL";
 		_generalMacro="A3CN_LSV_02_CASCAVEL";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -343,7 +344,7 @@ class CfgVehicles
 	class A3CN_LSV_02_EVEREST: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV EVEREST";
+		displayName="RAPTOR EVEREST";
 		_generalMacro="A3CN_LSV_02_EVEREST";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -369,7 +370,7 @@ class CfgVehicles
 	class A3CN_LSV_02_KAPPA: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV KAPPA";
+		displayName="RAPTOR KAPPA";
 		_generalMacro="A3CN_LSV_02_KAPPA";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -396,7 +397,7 @@ class CfgVehicles
 	class A3CN_LSV_02_KRAKEN: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV KRAKEN";
+		displayName="RAPTOR KRAKEN";
 		_generalMacro="A3CN_LSV_02_KRAKEN";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -423,7 +424,7 @@ class CfgVehicles
 	class A3CN_LSV_02_MYTRA: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV MYTRA";
+		displayName="RAPTOR MYTRA";
 		_generalMacro="A3CN_LSV_02_MYTRA";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -450,7 +451,7 @@ class CfgVehicles
 	class A3CN_LSV_02_TAIPAN: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV TAIPAN";
+		displayName="RAPTOR TAIPAN";
 		_generalMacro="A3CN_LSV_02_TAIPAN";
 		side = 1;
 		faction = "A3CN_Vehicles";
@@ -477,7 +478,7 @@ class CfgVehicles
 	class A3CN_LSV_02_VIBORA: A3CN_LSV_01_BLACK
 	{
 		author="NFC3SPECTRO / Toaster";
-		displayName="LSV VÍBORA";
+		displayName="RAPTOR VÍBORA";
 		_generalMacro="A3CN_LSV_02_VIBORA";
 		side = 1;
 		faction = "A3CN_Vehicles";
