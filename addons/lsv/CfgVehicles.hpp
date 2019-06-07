@@ -923,8 +923,8 @@ class CfgVehicles
 			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_kappa_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
-			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
-			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_green.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_green.paa"
 		};
 	};
 
@@ -981,8 +981,8 @@ class CfgVehicles
 			"\x\a3cn_vehicles\addons\lsv\data\cfod_lsv_02_mytra_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_02_co.paa",
 			"\x\a3cn_vehicles\addons\lsv\data\a3cn_lsv_vibora_03_co.paa",
-			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
-			"\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_green.paa",
+			"\x\a3cn_vehicles\addons\lsv\data\vorona_green.paa"
 		};
 	};
 
