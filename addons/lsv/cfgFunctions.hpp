@@ -7,7 +7,7 @@ class CfgFunctions
 		{
 			file = "\x\a3cn_vehicles\addons\lsv\functions";
 			// [unitToRearm, rearmLocation] spawn A3CN_fnc_helloWorld
-			class helloWorld;
+			class strobeSystem;
 		};
 		
 	};
