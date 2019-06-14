@@ -2,7 +2,7 @@
 params ["_vehicle"];
 
 // object addAction [title, script, arguments, priority, showWindow, hideOnUse, shortcut, condition, radius, unconscious, selection, memoryPoint] 
-_vehicle addAction 
+_startStrobe = _vehicle addAction 
 [
     "Ligar Strobe IR", 
     {
@@ -27,10 +27,11 @@ _vehicle addAction
     "",
     ""
 ];
+_vehicle setUserActionText [_startStrobe, "<img size='2' image='\a3\ui_f\data\IGUI\Cfg\Actions\beacons_on_ca'/> Ligar strobe IR"];
 
 
 
-_vehicle addAction 
+_stopStrobe = _vehicle addAction 
 [
     "Desligar Strobe IR", 
     {
@@ -57,7 +58,7 @@ _vehicle addAction
     "",
     ""
 ]; 
-
+_vehicle setUserActionText [_stopStrobe, "<img size='2' image='\a3\ui_f\data\IGUI\Cfg\Actions\beacons_off_ca'/> Desligar strobe IR"];
 
 
 
