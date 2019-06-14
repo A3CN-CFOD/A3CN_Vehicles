@@ -29,7 +29,7 @@ class CfgVehicles
 		
 		class EventHandlers
 		{
-			init="(_this) call A3CN_fnc_strobeSystem;(_this select 0) removeMagazinesTurret [""500Rnd_65x39_Belt_Tracer_Green_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];";
+			init="(_this) call A3CN_fnc_menuActions;(_this select 0) removeMagazinesTurret [""500Rnd_65x39_Belt_Tracer_Green_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];(_this select 0) addMagazineTurret [""2000Rnd_65x39_Belt_Tracer_Yellow_Splash"",[0]];";
 		};
 
 
@@ -531,7 +531,7 @@ class CfgVehicles
 		editorSubcategory = "vehicleRaptorAT";
 		class EventHandlers
 		{
-			init="(_this) call A3CN_fnc_strobeSystem;(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];";
+			init="(_this) call A3CN_fnc_menuActions;(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];(_this select 0) addMagazineTurret [""Vorona_HEAT"",[0]];";
 		};
 
 
