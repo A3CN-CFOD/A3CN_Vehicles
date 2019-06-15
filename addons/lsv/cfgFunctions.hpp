@@ -10,6 +10,7 @@ class CfgFunctions
 			class menuActions;
 			class strobeSystem;
 			class unflipSystem;
+			class smokeSystem;
 		};
 		
 	};

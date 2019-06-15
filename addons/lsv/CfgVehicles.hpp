@@ -276,6 +276,16 @@ class CfgVehicles
 				
 			};
 		};
+
+		weapons[]=
+		{
+			"SportCarHorn",
+			"SmokeLauncher"
+		};
+		magazines[]=
+		{
+			"SmokeLauncherMag"
+		};
 	};
 	class A3CN_LSV_02_ADAX: A3CN_LSV_01_BLACK
 	{
@@ -781,6 +791,16 @@ class CfgVehicles
 				maxHandBrakeTorque=8000;
 				
 			};
+
+		};
+		weapons[]=
+		{
+			"SportCarHorn",
+			"SmokeLauncher"
+		};
+		magazines[]=
+		{
+			"SmokeLauncherMag"
 		};
 	};
 
