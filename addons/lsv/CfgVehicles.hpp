@@ -42,18 +42,18 @@ class CfgVehicles
 
 		class AcreRacks {
             
-            class Rack_1 {
-                displayName = "CFOD Radio Rack";      // Name displayed in the interaction menu
-                shortName = "Radio";                  // Short name displayed on the HUD. Maximum of 5 characters
-                componentName = "ACRE_VRC103";        // Rack type (able to mount a PRC117F)
-                allowedPositions[] = {"driver", {"cargo", 1}, "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
-                disabledPositions[] = {};
-                defaultComponents[] = {};
-                mountedRadio = "ACRE_PRC117F";        // Predefined mounted radio
-                isRadioRemovable = 0;                 // Radio cannot be removed
-                intercom[] = {};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
-            };
-        };
+		    class Rack_1 {
+			displayName = "CFOD Radio Rack";      // Name displayed in the interaction menu
+			shortName = "Radio";                  // Short name displayed on the HUD. Maximum of 5 characters
+			componentName = "ACRE_VRC103";        // Rack type (able to mount a PRC117F)
+			allowedPositions[] = {"driver", {"cargo", 1}, "gunner"}; // Who can configure the radio and open the radio GUI. Same wildcards as the intercom. It also allows transmitting/receiving
+			disabledPositions[] = {};
+			defaultComponents[] = {};
+			mountedRadio = "ACRE_PRC117F";        // Predefined mounted radio
+			isRadioRemovable = 0;                 // Radio cannot be removed
+			intercom[] = {};                      // Radio not wired to any intercom. All units in intercom can receive/send transmittions (ACE3 interaction menu) but they cannot manipulate the radio (GUI interface)
+		    };
+		};
 
 
 
